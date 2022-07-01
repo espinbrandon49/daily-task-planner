@@ -3,7 +3,8 @@ $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
 const timeBlocks = (() => {
   //current hour from moment.js
-  const nowHour = moment().format('H')
+  //const nowHour = moment().format('H')
+  const nowHour = moment().hours()
   console.log(nowHour)
 
   // a time block
@@ -11,11 +12,14 @@ const timeBlocks = (() => {
     // updates the background color based on current hour
     const textArea9Status = (() => {
       if ($('#hourTime9').attr('value') < nowHour) {
+        console.log($('#hourTime9').attr('value'))
         $('#textArea9').addClass('past')
       } else if ($('#hourTime9').attr('value') > nowHour) {
         $('#textArea9').addClass('future')
+        console.log($('#hourTime9').attr('value'))
       } else {
         $('#textArea9').addClass('present')
+        console.log($('#hourTime9').attr('value'))
       }
     })()
     // sets event handler for time block save button
@@ -27,7 +31,9 @@ const timeBlocks = (() => {
         console.log('nine')
       })
     })()
+
     $('#textArea9').val(localStorage.getItem('button9'))
+
   })()
 
   // another time block
@@ -176,6 +182,27 @@ const timeBlocks = (() => {
       })
     })()
     $('#textArea16').val(localStorage.getItem('button16'))
+  })()
+
+  const hourTime17 = (() => {
+    const textArea17Status = (() => {
+      if ($('#hourTime17').attr('value') < nowHour) {
+        $('#textArea17').addClass('past')
+      } else if ($('#hourTime17').attr('value') > nowHour) {
+        $('#textArea17').addClass('future')
+      } else {
+        $('#textArea17').addClass('present')
+      }
+    })()
+    const button16On = (() => {
+      $('#button16').on('click', function () {
+        let textAreas17 = ''
+        textAreas17 += $('#textArea16').val()
+        localStorage.setItem('button17', textAreas16)
+        console.log('seventeen')
+      })
+    })()
+    $('#textArea17').val(localStorage.getItem('button17'))
   })()
 })()
 

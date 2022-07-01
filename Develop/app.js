@@ -1,39 +1,72 @@
 // connected moment.js to p element
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
-// connect hour to hour class
 //let todayHours = moment().hour();
 const clockClasses = (() => {
   const nowHour = moment().format('H')
   console.log(nowHour)
+
   const hourTime9 = (() => {
-    if ($('#hourTime9').attr('value') < nowHour) {
-      $('#textArea9').addClass('past')
-    } else if ($('#hourTime9').attr('value') > nowHour) {
-      $('#textArea9').addClass('future')
-    } else {
-      $('#textArea9').addClass('present')
-    }
+    const textArea9Status = (() => {
+      if ($('#hourTime9').attr('value') < nowHour) {
+        $('#textArea9').addClass('past')
+      } else if ($('#hourTime9').attr('value') > nowHour) {
+        $('#textArea9').addClass('future')
+      } else {
+        $('#textArea9').addClass('present')
+      }
+    })()
+    const button9On = (() => {
+      $('#button9').on('click', function () {
+        let textAreas9 = ''
+        textAreas9 += $('#textArea9').val()
+        localStorage.setItem('button9', textAreas9)
+        console.log('nine')
+      })
+    })()
+    $('#textArea9').val(localStorage.getItem('button9'))
   })()
 
   const hourTime10 = (() => {
-    if ($('#hourTime10').attr('value') < nowHour) {
-      $('#textArea10').addClass('past')
-    } else if ($('#hourTime10').attr('value') > nowHour) {
-      $('#textArea10').addClass('future')
-    } else {
-      $('#textArea10').addClass('present')
-    }
+    const textArea10Status = (() => {
+      if ($('#hourTime10').attr('value') < nowHour) {
+        $('#textArea10').addClass('past')
+      } else if ($('#hourTime10').attr('value') > nowHour) {
+        $('#textArea10').addClass('future')
+      } else {
+        $('#textArea10').addClass('present')
+      }
+    })()
+    const button10On = (() => {
+      $('#button10').on('click', function () {
+        let textAreas10 = ''
+        textAreas10 += $('#textArea10').val()
+        localStorage.setItem('button10', textAreas10)
+        console.log('ten')
+      })
+    })()
+    $('#textArea10').val(localStorage.getItem('button10'))
   })()
 
   const hourTime11 = (() => {
-    if ($('#hourTime11').attr('value') < nowHour) {
-      $('#textArea11').addClass('past')
-    } else if ($('#hourTime11').attr('value') > nowHour) {
-      $('#textArea11').addClass('future')
-    } else {
-      $('#textArea11').addClass('present')
-    }
+    const textArea11Status = (() => {
+      if ($('#hourTime11').attr('value') < nowHour) {
+        $('#textArea11').addClass('past')
+      } else if ($('#hourTime11').attr('value') > nowHour) {
+        $('#textArea11').addClass('future')
+      } else {
+        $('#textArea11').addClass('present')
+      }
+    })()
+    const button11On = (() => {
+      $('#button11').on('click', function () {
+        let textAreas11 = ''
+        textAreas11 += $('#textArea11').val()
+        localStorage.setItem('button11', textAreas11)
+        console.log('eleven')
+      })
+    })()
+    $('#textArea11').val(localStorage.getItem('button11'))
   })()
 
   const hourTime12 = (() => {
@@ -102,12 +135,9 @@ const clockClasses = (() => {
 
 //localStorage.setItem('textAreas', textAreas)
 
-function localStorageFunction() {
-  const textAreas = ''
-  textAreas=$('#textArea9').text()
-  localStorage.setItem('button9', textAreas)
-  console.log('pink')
-}
-$('#button9').on('click', localStorageFunction)
+
+
+
+
 
 

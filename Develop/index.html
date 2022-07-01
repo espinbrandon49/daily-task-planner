@@ -7,84 +7,98 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+      />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
-    />
+      />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
-    />
+      />
     <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
-
-
   </head>
 
-  <body> <!--STARTER CODE-->
-=
+  <body>
+    =
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
-
       <div class="row time-block">
-        <div class="hour col-md-1"><span class="hourTime" id="hourTime9" value="23">23</span><span>PM</span></div>
-        <textarea name="" id="textArea9" cols="80" rows="3" class="col-md-10"></textarea>
-        <button id="button9" class="saveBtn btn col-md-1"><img src="./content-save-edit-outline.svg" alt="save work icon to save task event"></button>
+        <div class="hour col-md-1 col-1"><span id="hourTime9" value="23">23</span><span>PM</span></div>
+        <textarea id="textArea9" cols="80" rows="3" class="col-md-10"></textarea>
+        <button id="button9" class="saveBtn btn col-md-1"><img
+            src="./content-save-edit-outline.svg" alt="save work icon to save
+            task event"></button>
       </div>
 
       <div class="row time-block">
-        <div class="hour col-md-1"><span class="hourTime"  id="hourTime10" value="24">24</span><span>PM</span></div>
-        <textarea name="" id="textArea10" cols="80" rows="3" class="col-md-10"></textarea>
-        <button id="button10" class="saveBtn btn col-md-1"><img src="./content-save-edit-outline.svg" alt="save work icon to save task event"></button>
+        <div class="hour col-md-1 col-1"><span id="hourTime10" value="0">24</span><span>PM</span></div>
+        <textarea id="textArea10" cols="80" rows="3" class="col-md-10"></textarea>
+        <button id="button10" class="saveBtn btn col-md-1"><img
+            src="./content-save-edit-outline.svg" alt="save work icon to save
+            task event"></button>
       </div>
 
       <div class="row time-block">
-        <div class="hour col-md-1"><span class="hourTime"  id="hourTime11" value="01">1</span><span>PM</span></div>
-        <textarea name="" id="textArea11" cols="80" rows="3" class="col-md-10"></textarea>
-        <button  id="button11" class="saveBtn btn col-md-1"><img src="./content-save-edit-outline.svg" alt="save work icon to save task event"></button>
+        <div class="hour col-md-1 col-1"><span id="hourTime11" value="01">1</span><span>PM</span></div>
+        <textarea id="textArea11" cols="80" rows="3" class="col-md-10"></textarea>
+        <button id="button11" class="saveBtn btn col-md-1"><img
+            src="./content-save-edit-outline.svg" alt="save work icon to save
+            task event"></button>
       </div>
 
       <div class="row time-block">
-        <div class="hour col-md-1"><span class="hourTime"  id="hourTime12" value="02">2</span><span>PM</span></div>
-        <textarea name="" id="textArea12" cols="80" rows="3" class="col-md-10"></textarea>
-        <button id="button12" class="saveBtn btn col-md-1"><img src="./content-save-edit-outline.svg" alt="save work icon to save task event"></button>
+        <div class="hour col-md-1 col-1"><span id="hourTime12" value="02">2</span><span>PM</span></div>
+        <textarea id="textArea12" cols="80" rows="3" class="col-md-10"></textarea>
+        <button id="button12" class="saveBtn btn col-md-1"><img
+            src="./content-save-edit-outline.svg" alt="save work icon to save
+            task event"></button>
       </div>
 
       <div class="row time-block">
-        <div class="hour col-md-1"><span class="hourTime"  id="hourTime13" value="03">3</span><span>AM</span></div>
-        <textarea name="" id="textArea13" cols="80" rows="3" class="col-md-10"></textarea>
-        <button id="button13" class="saveBtn btn col-md-1"><img src="./content-save-edit-outline.svg" alt="save work icon to save task event"></button>
+        <div class="hour col-md-1 col-1"><span id="hourTime13" value="03">3</span><span>AM</span></div>
+        <textarea id="textArea13" cols="80" rows="3" class="col-md-10"></textarea>
+        <button id="button13" class="saveBtn btn col-md-1"><img
+            src="./content-save-edit-outline.svg" alt="save work icon to save
+            task event"></button>
       </div>
 
       <div class="row time-block">
-        <div class="hour col-md-1"><span class="hourTime"  id="hourTime14" value="04">4</span><span>AM</span></div>
-        <textarea name="" id="textArea14" cols="80" rows="3" class="col-md-10"></textarea>
-        <button id="button14" class="saveBtn btn col-md-1"><img src="./content-save-edit-outline.svg" alt="save work icon to save task event"></button>
+        <div class="hour col-md-1 col-1"><span id="hourTime14" value="04">4</span><span>AM</span></div>
+        <textarea id="textArea14" cols="80" rows="3" class="col-md-10"></textarea>
+        <button id="button14" class="saveBtn btn col-md-1"><img
+            src="./content-save-edit-outline.svg" alt="save work icon to save
+            task event"></button>
       </div>
 
       <div class="row time-block">
-        <div class="hour col-md-1"><span class="hourTime"  id="hourTime15" value="05">5</span><span>AM</span></div>
-        <textarea name="" id="textArea15" cols="80" rows="3" class="col-md-10"></textarea>
-        <button id="button15" class="saveBtn btn col-md-1"><img src="./content-save-edit-outline.svg" alt="save work icon to save task event"></button>
+        <div class="hour col-md-1 col-1"><span id="hourTime15" value="05">5</span><span>AM</span></div>
+        <textarea id="textArea15" cols="80" rows="3" class="col-md-10"></textarea>
+        <button id="button15" class="saveBtn btn col-md-1"><img
+            src="./content-save-edit-outline.svg" alt="save work icon to save
+            task event"></button>
       </div>
 
       <div class="row time-block">
-        <div class="hour col-md-1"><span class="hourTime"  id="hourTime16" value="06">6</span><span>AM</span></div>
-        <textarea name="" id="textArea16" cols="80" rows="3" class="col-md-10"></textarea>
-        <button id="button16" class="saveBtn btn col-md-1"><img src="./content-save-edit-outline.svg" alt="save work icon to save task event"></button>
+        <div class="hour col-md-1 col-1"><span id="hourTime16" value="06">6</span><span>AM</span></div>
+        <textarea id="textArea16" cols="80" rows="3" class="col-md-10"></textarea>
+        <button id="button16" class="saveBtn btn col-md-1"><img
+            src="./content-save-edit-outline.svg" alt="save work icon to save
+            task event"></button>
       </div>
-    </div> <!--STARTER CODE-->
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

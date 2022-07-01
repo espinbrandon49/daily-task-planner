@@ -89,5 +89,4 @@ $(document).ready(function () {
     setInterval(updateMinutes, 1000);
     setInterval(updateSeconds, 1000);
     setInterval(countdown, 1);
-
 })

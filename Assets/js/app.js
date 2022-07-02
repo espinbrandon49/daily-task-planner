@@ -7,7 +7,7 @@ const timeBlocks = (() => {
 
   // Loads tasks from local storage
   const tasks = (() => {
-    $('textarea').each(function (i, val) {
+    $('textarea').each(function () {
       const btnId = $(this).next().attr('id')
       $(this).val(localStorage.getItem(btnId))
     })

@@ -3,10 +3,17 @@ $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
 const timeBlocks = (() => {
   //current hour from moment.js
-  const nowHour = moment().hours()
-  console.log(nowHour)
+  const nowHour = moment().hours();
 
-  //changes textarea className dependant on nowHour variable value
+  // Loads tasks from local storage
+  const tasks = (() => {
+    $('textarea').each(function (i, val) {
+      const btnId = $(this).next().attr('id')
+      $(this).val(localStorage.getItem(btnId))
+    })
+  })()
+
+  // Changes textarea className to color code tasks depending on the time 
   const taskStatus = (() => {
     $('textarea').each(function () {
       if ($(this).attr('value') < nowHour) {
@@ -19,23 +26,16 @@ const timeBlocks = (() => {
     })
   })()
 
-  $('button').on('click', function () {
-    var textVal = $(this).prev().val();
-    var btnId = $(this).attr('id');
-    //console.log(btnId)
-    localStorage.setItem(btnId, textVal);
-  })
-  
-  $('textarea').each(function (i, val) {
-    console.log($(this))
-    var btnId = $(this).next().attr('id')
-    $(this).val(localStorage.getItem(btnId))
-  })
-
+  // saves task when save button is clicked 
+  const saveTask = (() => {
+    $('button').on('click', function () {
+      const textVal = $(this).prev().val()
+      const btnId = $(this).attr('id')
+      localStorage.setItem(btnId, textVal)
+    })
+  })()
 })()
 
-
-// something that i can use the buttons but only triggers inside the div their in.
 
 
 

@@ -86,7 +86,7 @@ textarea {
   transition: all .3s ease-in-out;
 }
 
-/* smartphones - navbar changes color */
+/* smartphones */
 @media screen and (max-width: 768px) {
   .hour {
     width: fit-content;

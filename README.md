@@ -29,7 +29,7 @@ This is a simple calendar application that allows a user to save important event
 
 #### CSS
 * CSS was provided and I linked the given style with my added HTML and jQuery.  I modified the style properties if needed without changing the overall theme.
-* The application has a responsive layout that adapts to your viewport on various screen sizes.  I also contributed a media query for smaller smart phone screens.
+* The application has a responsive layout that adapts to your viewport on various screen sizes.  I also contributed the media queries for smaller smart phone screens.
 
 #### Git/GitHub
 * The Application is deployed at a live URL and loads with no errors.

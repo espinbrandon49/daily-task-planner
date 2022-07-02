@@ -101,17 +101,20 @@ textarea {
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 575px) {
   * {
-    font-size: 10px;
+    font-size: 12px;
   }
   .container {
-    width: 350px;
+    width: 400px;
+  }
+  textarea {
+    font-size: 17px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .container {
-    width: 275px;
+    width: 300px;
   }
 }

@@ -1,89 +1,52 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work Day Scheduler
 
-## Your Task
+## Description
+This is a simple calendar application that allows a user to save important events for each hour of the day.  I modified existing starter code to create the functionality.  This app features dynamically updated HTML and CSS powered by jQuery.
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+  * GitHub repository: https://github.com/espinbrandon49/daily-task-planner
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+  * Deployed Link: https://espinbrandon49.github.io/daily-task-planner/
 
-## User Story
+## Installation
+  * Runs in the browser
+  * Git clone - git@github.com:espinbrandon49/daily-task-planner.git
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+## Tools
+### jQuery, Bootstrap, Moment.js, HTML, CSS, Git, GitHub, Chrome DevTools
 
-## Acceptance Criteria
+#### jQuery, Moment.js
+* I used the 3rd power API as that was the current code given to me to modify to create the app functionality.
+* I used the Moment.js library to work with date and time.
+* I also used the web API to persist the tasks in local storage.
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+#### Bootstrap
+* I applied the bootstrap grid system to responsively style the application.
+* The starter code used bootstrap and I modified/contributed to integrate my additions, the timeblocks, to work effectively with the provided well-designed structure.
 
-The following animation demonstrates the application functionality:
+#### HTML
+* HTML was provided and I contributed the timeblocks that are effective, cohesive and consistent with the given starter structure and styles.
+* The HTML elements are laid out in a logical hierarchial structure 
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-challenge-demo.gif)
+#### CSS
+* CSS was provided and I linked the given style with my added HTML and jQuery.  I modified the style properties if needed without changing the overall theme.
+* The application has a responsive layout that adapts to your viewport on various screen sizes.  I also contributed a media query for smaller smart phone screens.
 
+#### Git/GitHub
+* The Application is deployed at a live URL and loads with no errors.
+* Repository follows best practices for file structure and naming conventions.
+* Repository commit messages allow one to follow along as the application development story unfolds.
+* Repository contains quality readme with description, screenshot, link to deployed application.
+* GitHub repository contains application code.
 
-## Grading Requirements
+#### Chrome DevTools
+* Used console to diagnose problems with my code.
+* Used console to view the results of all of my functions to see that they were doing what I expected and holistically.
+* Using DevTools, I viewed my media queries and application on different device screens and to inspect various elements in the Elements panel.
+* Used DevTools to examine my box sizes, padding, borders, content, etc., and to view element styles in the browser.
 
-This challenge is graded based on the following criteria: 
+## Collaboration
+Jerome Chenette
 
-### Technical Acceptance Criteria: 40%
+## Screenshots
+####  ![workDaySchedulerDemo](./Assets/images/workDayScheduler.gif)
 
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the challenge instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.

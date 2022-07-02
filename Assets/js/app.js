@@ -3,7 +3,6 @@ $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
 const timeBlocks = (() => {
   //current hour from moment.js
-  //const nowHour = moment().format('H')
   const nowHour = moment().hours()
   console.log(nowHour)
 
@@ -12,14 +11,11 @@ const timeBlocks = (() => {
     // updates the background color based on current hour
     const textArea9Status = (() => {
       if ($('#hourTime9').attr('value') < nowHour) {
-        console.log($('#hourTime9').attr('value'))
         $('#textArea9').addClass('past')
       } else if ($('#hourTime9').attr('value') > nowHour) {
         $('#textArea9').addClass('future')
-        console.log($('#hourTime9').attr('value'))
       } else {
         $('#textArea9').addClass('present')
-        console.log($('#hourTime9').attr('value'))
       }
     })()
     // sets event handler for time block save button
@@ -28,7 +24,6 @@ const timeBlocks = (() => {
         let textAreas9 = ''
         textAreas9 += $('#textArea9').val()
         localStorage.setItem('button9', textAreas9)
-        console.log('nine')
       })
     })()
 
@@ -52,7 +47,6 @@ const timeBlocks = (() => {
         let textAreas10 = ''
         textAreas10 += $('#textArea10').val()
         localStorage.setItem('button10', textAreas10)
-        console.log('ten')
       })
     })()
     $('#textArea10').val(localStorage.getItem('button10'))
@@ -73,7 +67,6 @@ const timeBlocks = (() => {
         let textAreas11 = ''
         textAreas11 += $('#textArea11').val()
         localStorage.setItem('button11', textAreas11)
-        console.log('eleven')
       })
     })()
     $('#textArea11').val(localStorage.getItem('button11'))
@@ -94,7 +87,6 @@ const timeBlocks = (() => {
         let textAreas12 = ''
         textAreas12 += $('#textArea12').val()
         localStorage.setItem('button12', textAreas12)
-        console.log('twelve')
       })
     })()
     $('#textArea12').val(localStorage.getItem('button12'))
@@ -115,7 +107,6 @@ const timeBlocks = (() => {
         let textAreas13 = ''
         textAreas13 += $('#textArea13').val()
         localStorage.setItem('button13', textAreas13)
-        console.log('thirteen')
       })
     })()
     $('#textArea13').val(localStorage.getItem('button13'))
@@ -136,7 +127,6 @@ const timeBlocks = (() => {
         let textAreas14 = ''
         textAreas14 += $('#textArea14').val()
         localStorage.setItem('button14', textAreas14)
-        console.log('fourteen')
       })
     })()
     $('#textArea14').val(localStorage.getItem('button14'))
@@ -157,7 +147,6 @@ const timeBlocks = (() => {
         let textAreas15 = ''
         textAreas15 += $('#textArea15').val()
         localStorage.setItem('button15', textAreas15)
-        console.log('fifteen')
       })
     })()
     $('#textArea15').val(localStorage.getItem('button15'))
@@ -178,7 +167,6 @@ const timeBlocks = (() => {
         let textAreas16 = ''
         textAreas16 += $('#textArea16').val()
         localStorage.setItem('button16', textAreas16)
-        console.log('sixteen')
       })
     })()
     $('#textArea16').val(localStorage.getItem('button16'))
@@ -199,11 +187,30 @@ const timeBlocks = (() => {
         let textAreas17 = ''
         textAreas17 += $('#textArea16').val()
         localStorage.setItem('button17', textAreas16)
-        console.log('seventeen')
       })
     })()
     $('#textArea17').val(localStorage.getItem('button17'))
   })()
+})
+
+
+
+const hourTime = (() => {
+  const nowHour = moment().hours()
+  
+  const taskStatus = (() => {
+    $('textarea').each(function (index) {
+      if ($(this).attr('value') < nowHour) {
+        console.log('pink')
+        $(this).addClass('past')
+      } else if ($(this).attr('value') > nowHour) {
+        $(this).addClass('future')
+      } else {
+        $(this).addClass('present')
+      }
+    })
+  })()
+
 })()
 
 

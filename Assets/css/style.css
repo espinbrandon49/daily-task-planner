@@ -23,6 +23,8 @@ body {
   height: fit-content;
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .time-block {
@@ -93,7 +95,23 @@ textarea {
     border-top: none;
     margin-right: 20px;
   }
+
   .saveBtn {
     width: fit-content
+  }
+}
+
+@media screen and (max-width: 570px) {
+  * {
+    font-size: 10px;
+  }
+  .container {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 275px;
   }
 }
